@@ -13,9 +13,9 @@ namespace WebApp.Models
         [JsonProperty("id")]
         public int Id { get; set; }
         [JsonProperty("full-name")]
-        public string fullname { get; set; }
+        public string Fullname { get; set; }
         [JsonProperty("short-name")]
-        public string shortname { get; set; }
+        public string Shortname { get; set; }
         public bool Edited { get; set; }
         public bool IsDeleted { get; set; }
     }

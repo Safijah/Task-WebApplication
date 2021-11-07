@@ -72,8 +72,17 @@
         top: 15px;
         bottom: 20px;
     }
-
- 
+    #Button {
+        border-radius: 5px;
+        border-color: lightblue;
+        border: 5px solid transparent;
+        position: relative;
+        left: 100px;
+        top: 20px;
+        color: red;
+        margin-top: 10px;
+    }
+    
 </style>
 <div id="Page">
     <div id="Main">
@@ -83,7 +92,6 @@
         </div>
         <div id="Data">
           
-            <form  style="background-color: white;">
                 <label>Name</label>
                 <input class="input_field" asp-for="Name" readonly />
                 <br />
@@ -91,20 +99,21 @@
                 <input class="input_field" asp-for="Address" readonly />
                 <br />
                 <label>Postcode</label>
-                <input class="input_field" asp-for="Postcode" readonly/>
+                <input class="input_field" asp-for="Postcode" readonly />
                 <br />
                 <label>Ground</label>
                 <input class="input_field" asp-for="Ground" readonly />
                 <br />
                 <label>Capacity</label>
-                <input class="input_field" asp-for="Capacity" readonly/>
+                <input class="input_field" asp-for="Capacity" readonly />
                 <br />
                 <label>Twitter</label>
                 <input class="input_field" asp-for="Twitter" readonly />
                 <br />
                 <input class="input_field" asp-for="Id" hidden />
-                
-            </form>
+                <button id="Button" onclick="window.location='/Team/Index'">Back</button>
+               
+            
         </div>
     </div>
 </div>
