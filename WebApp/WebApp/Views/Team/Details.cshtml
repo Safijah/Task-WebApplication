@@ -1,0 +1,112 @@
+﻿@{
+    Layout = null;
+}
+
+@using WebApp.Models
+@model TeamDetails
+<style>
+    #Page {
+        height: 100%;
+        width: 100%;
+        background-image: url("https://i.pinimg.com/564x/8f/c6/b7/8fc6b7eca6e1d9bba6500efc0cfd8bda.jpg");
+        background-position: center;
+        background-size: cover;
+        opacity: 0.9;
+    }
+
+    #Main {
+        border-radius: 10px;
+        position: relative;
+        height: 500px;
+        width: 80%;
+        top: 40px;
+        left: 130px;
+    }
+
+    #Picture {
+        height: 100%;
+        width: 40%;
+        float: left;
+    }
+
+    #Image {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+    }
+
+    #Data {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        margin-top: 6px;
+        background-color: white;
+    }
+
+    .input_field {
+        border: 1px solid transparent;
+        margin-left: 65px;
+        padding-top: 50px;
+        width: 500px;
+        border: 1px solid transparent;
+        border-bottom: 1px solid lightblue;
+        color: gray;
+    }
+
+    label {
+        padding-top: 50px;
+        padding-left: 48px;
+        /*margin-left: 40px;*/
+        font-weight: normal;
+        color: black;
+    }
+
+    span {
+        color: lightblue;
+        padding-top: 2px;
+        font-size: 25px;
+        padding-left: 10px;
+        position: relative;
+        top: 15px;
+        bottom: 20px;
+    }
+
+ 
+</style>
+<div id="Page">
+    <div id="Main">
+        <div id="Picture">
+            <img id="Image" src="https://www.ixpap.com/images/2021/03/hd-football-wallpaper-ixpap-4.jpg" alt="Mountains">
+
+        </div>
+        <div id="Data">
+          
+            <form  style="background-color: white;">
+                <label>Name</label>
+                <input class="input_field" asp-for="Name" readonly />
+                <br />
+                <label>Address</label>
+                <input class="input_field" asp-for="Address" readonly />
+                <br />
+                <label>Postcode</label>
+                <input class="input_field" asp-for="Postcode" readonly/>
+                <br />
+                <label>Ground</label>
+                <input class="input_field" asp-for="Ground" readonly />
+                <br />
+                <label>Capacity</label>
+                <input class="input_field" asp-for="Capacity" readonly/>
+                <br />
+                <label>Twitter</label>
+                <input class="input_field" asp-for="Twitter" readonly />
+                <br />
+                <input class="input_field" asp-for="Id" hidden />
+                
+            </form>
+        </div>
+    </div>
+</div>
+
+
